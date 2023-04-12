@@ -154,6 +154,15 @@ exports.postRegister = async (req, res) => {
         password: hashedPassword,
     }
 
-    users.insertOne(user)
-    res.redirect("/account/login")
+    const usernameCheck = await users.findOne({
+        username: username,
+    })
+
+    if (usernameCheck) {
+        console.log("Username already taken")
+        res.render("pages/register.ejs")
+    } else {
+        users.insertOne(user)
+        res.redirect("/account/login")
+    }
 }

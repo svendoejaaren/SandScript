@@ -36,12 +36,12 @@ main.register section {
 	width: 90%;
 }
 main.register section h2, main.register p {
-    text-align: center;
+	text-align: center;
 }
 main.register section h2 {
 	font-size: 3em;
-	margin-bottom: 0.4em;
 	margin-top: 2em;
+	margin-bottom: 0.4em;
 }
 main.register section form input {
     width: 100%;
@@ -52,9 +52,8 @@ main.register section form input {
     color: #000;
 }
 main.register select {
-	width: 56.7em;
-	padding: 0.6em;
-	border: none;
+	width: 56.8em;
+	padding: .7em;
 	margin-bottom: .6em;
 }
 main.register section form input[type="submit"] {
