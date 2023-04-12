@@ -44,6 +44,9 @@ main.register section form input[type="submit"] {
     color: var(--white);
     cursor: pointer;
 }
+main.register section a {
+    text-decoration: underline;
+}
 
 /*====================
 inloggen stijling

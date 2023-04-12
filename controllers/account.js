@@ -158,9 +158,12 @@ exports.postRegister = async (req, res) => {
         username: username,
     })
 
+    const errorMessage =
+        "This username is already taken. Please choose something else"
+
     if (usernameCheck) {
         console.log("Username already taken")
-        res.render("pages/register.ejs")
+        res.render("pages/register.ejs", { errorMessage: errorMessage })
     } else {
         users.insertOne(user)
         res.redirect("/account/login")

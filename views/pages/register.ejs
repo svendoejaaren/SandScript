@@ -10,6 +10,9 @@
             <section>
                 <h2>Register</h2>
 
+                <% if(typeof errorMessage !== "undefined" && errorMessage) { %>
+                    <p><%= errorMessage %></p>
+                <% } %>
                 <form class="register-form" method="POST" action="profile">
                     <label for="name">Name</label>
                     <input
