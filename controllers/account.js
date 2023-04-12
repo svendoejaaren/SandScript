@@ -131,25 +131,27 @@ exports.register = (req, res) => {
 }
 
 exports.postRegister = async (req, res) => {
+    const name = req.body.name
     const username = req.body.username
     const email = req.body.email
+    const age = req.body.age
+    const gender = req.body.gender
+    const interests = req.body.interests
+    const language = req.body.language
+    const country = req.body.country
     const password = req.body.password
     const hashedPassword = await bcrypt.hash(password, 10)
-    const emptyString = ""
-    const emptyArray = []
 
     const user = {
-        name: emptyString,
-        age: null,
-        gender: emptyString,
-        interests: emptyArray,
-        language: emptyString,
-        password: hashedPassword,
-        country: emptyString,
+        name: name,
         username: username,
-        likedBy: emptyArray,
-        liked: emptyArray,
         email: email,
+        age: age,
+        gender: gender,
+        interests: interests,
+        language: language,
+        country: country,
+        password: hashedPassword,
     }
 
     users.insertOne(user)
