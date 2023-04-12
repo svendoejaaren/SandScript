@@ -24,16 +24,15 @@ main.register {
     height: 100vh;
 }
 main.register section {
-    left: 50%;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    color: #000;
-    padding: 50px;
-    border-radius: 10px;
-    background: rgba(255,255,255,0.5);
-    backdrop-filter: blur(1px);
-	width: 90%;
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	color: #000;
+	padding: 3em;
+	border-radius: .6em;
+	background: rgba(255,255,255,0.5);
+	width: 19.25em;
 }
 main.register section h2, main.register p {
 	text-align: center;
@@ -44,21 +43,21 @@ main.register section h2 {
 	margin-bottom: 0.4em;
 }
 main.register section form input {
-    width: 100%;
+    width: 15.9em;
     background: #fff;
     border: none;
-    padding: 10px;
-    margin-bottom: 10px;
+    padding: 0.725em;
+    margin-bottom: 0.725em;
     color: #000;
 }
 main.register select {
-	width: 56.8em;
-	padding: .7em;
-	margin-bottom: .6em;
+	width: 15.9em;
+	padding: .725em;
+	margin-bottom: .725em;
 }
 main.register section form input[type="submit"] {
     background: var(--blue);
-    border-radius: 10px;
+    border-radius: .7em;
     color: var(--white);
     cursor: pointer;
 }
